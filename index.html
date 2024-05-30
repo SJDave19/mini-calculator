@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-800">
+    <div class="calculator bg-white dark:bg-gray-900">
+        <div class="screen text-gray-900 dark:text-gray-100" id="screen">0</div>
+        <div class="grid grid-cols-4 gap-2 mt-4">
+            <div class="button gray" onclick="clearScreen()">C</div>
+            <div class="button gray" onclick="appendOperation('+/-')">+/-</div>
+            <div class="button gray" onclick="appendOperation('%')">%</div>
+            <div class="button orange" onclick="appendOperation('/')">/</div>
+            <div class="button gray" onclick="appendNumber('7')">7</div>
+            <div class="button gray" onclick="appendNumber('8')">8</div>
+            <div class="button gray" onclick="appendNumber('9')">9</div>
+            <div class="button orange" onclick="appendOperation('*')">x</div>
+            <div class="button gray" onclick="appendNumber('4')">4</div>
+            <div class="button gray" onclick="appendNumber('5')">5</div>
+            <div class="button gray" onclick="appendNumber('6')">6</div>
+            <div class="button orange" onclick="appendOperation('-')">-</div>
+            <div class="button gray" onclick="appendNumber('1')">1</div>
+            <div class="button gray" onclick="appendNumber('2')">2</div>
+            <div class="button gray" onclick="appendNumber('3')">3</div>
+            <div class="button orange" onclick="appendOperation('+')">+</div>
+            <div class="button gray col-span-2" onclick="appendNumber('0')">0</div>
+            <div class="button gray" onclick="appendNumber('.')">.</div>
+            <div class="button orange" onclick="calculateResult()">=</div>
+        </div>
+    </div>
+</body>
+</html>

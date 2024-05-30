@@ -1,0 +1,37 @@
+.calculator {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.screen {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    background-color: #f3f4f6;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.button:active {
+    opacity: 0.7;
+}
+.button.orange {
+    background-color: #fb923c;
+    color: white;
+}
+.button.gray {
+    background-color: #e5e7eb;
+}
